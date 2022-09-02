@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <div class="container ">
+          <a class="navbar-brand fst-italic" href="#">Porfolio</a>
+          </button>
+          <div >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+               <a href="#Contact"> <button type="button" class="btn btn-dark rounded-pill mt-3">Free consultation</button></a>
+              </li>
+             
+              </li>			
+            </ul>		  
+          </div>
+        </div>
+      </nav>
+      <div class="container p-3 ">
+        <h1>Website design made easy</h1>
+          <p> With my passion for web-development. I'm your one-stop shop for your website needs </p>
+      </div>
+      <div class="container">
+        <div class="row">
+        <div class="col-sm-12  col-md-3 mt-5">
+          <div class="card" style="width: 10rem;">
+            <img src="chiemeka.jpeg" class="card-img-top rounded-pill" alt="card">
+            </div>
+
+        </div>
+        <div class="col-sm-12 col-md-9 mt-5">
+          <h2><b> I'm Victor Chukwuemeka,and would be a pleasure to work on your next project. </b> </h2>
+            <p> I love working with others to create beautiful website, and also open to give you learning resources to becoming a developer with harvard cs50. </p>
+
+            <a href="#Contact"> <button type="button" class="btn btn-dark rounded-pill  mt-2">Free consultation</button></a>
+          </div>
+        </div>
+
+
+        <h1 class="mt-5 text-center"><b> About </b></h1>
+          <p class="text-center"> I'm a 17 years old web developer From nigeria, studying harvard cs50 under the mentorship of Prof. Bruce Elgort.<br>My passion for computer started when I was 12 years old as I was  the graphic editor of my school madien Magazine. I have the goal of getting a computer science degree in the nearest future. </p>
+        <h1 class="mt-5 text-center"><b> Projects</b></h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Screenshot (93).png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--Section: Contact v.2-->
+<section class="mb-4">
+
+  <!--Section heading-->
+  <h2 id="Contact" class="h1-responsive font-weight-bold text-center my-4 mt-5"><b>Contact us</b></h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. </p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>179 old abeokuta motor road, Agege lagos, Nigeria</p>
+              </li>
+
+              
+                <i class="bi bi-telephone-fill ">+2349030485438</i>
+              </li>
+
+              
+                <i class="bi bi-envelope ">Victorchukwuemeka127@gmail.com</i>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+        
+
+       
+      </div>
+</body>
+</html>
